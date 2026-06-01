@@ -12,7 +12,7 @@ export function SectionHeading({ eyebrow, title, description, align = "center", 
       viewport={{ once: true, margin: "-80px" }}
       variants={reduceMotion ? undefined : headingStagger}
       className={cn(
-        "mb-10 sm:mb-14 md:mb-16",
+        "mb-8 sm:mb-10 md:mb-12",
         align === "center" && "text-center mx-auto max-w-2xl",
         align === "left" && "text-left max-w-2xl",
         className

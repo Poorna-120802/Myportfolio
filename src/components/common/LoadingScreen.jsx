@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { profile } from "@/data/profile";
+import { BrandLogo } from "@/components/common/BrandLogo";
 
 export function LoadingScreen() {
   return (
@@ -15,9 +15,7 @@ export function LoadingScreen() {
         transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
         className="text-center"
       >
-        <div className="w-16 h-16 mx-auto mb-6 rounded-2xl bg-gradient-to-br from-violet-600 to-cyan-500 flex items-center justify-center text-2xl font-bold text-white shadow-lg shadow-violet-500/30">
-          {profile.fullName.charAt(0)}
-        </div>
+        <BrandLogo variant="mark" size="lg" className="mx-auto mb-6 drop-shadow-[0_8px_24px_rgba(167,139,250,0.35)]" />
         <motion.p
           className="text-sm font-mono text-muted uppercase tracking-widest"
           animate={{ opacity: [0.4, 1, 0.4] }}

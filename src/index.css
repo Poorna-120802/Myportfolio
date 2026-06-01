@@ -185,7 +185,11 @@ html.light {
   }
 
   .section-padding {
-    @apply px-4 sm:px-6 lg:px-8 py-16 sm:py-20 md:py-28 max-w-7xl mx-auto w-full;
+    @apply px-4 sm:px-6 lg:px-8 py-10 sm:py-12 md:py-16 max-w-7xl mx-auto w-full;
+  }
+
+  .section-padding-x {
+    @apply px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full;
   }
 
   .noise-overlay {

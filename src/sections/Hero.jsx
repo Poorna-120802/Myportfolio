@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { ArrowDown, Download, Github, Linkedin, Mail, Send } from "lucide-react";
-import { profile, summary } from "@/data/profile";
+import { profile } from "@/data/profile";
 import { ProfileShowcase } from "@/components/hero/ProfileShowcase";
 import { Button } from "@/components/ui/button";
 import { fadeInUp, staggerContainer } from "@/animations/variants";
@@ -15,7 +15,7 @@ export function Hero() {
   return (
     <section
       id="home"
-      className="relative min-h-[100dvh] flex items-center pt-20 sm:pt-24 pb-20 sm:pb-16 overflow-hidden"
+      className="relative min-h-[100dvh] flex items-center pt-20 sm:pt-24 pb-8 sm:pb-10 overflow-hidden"
     >
       <motion.div
         className="absolute inset-0 noise-overlay opacity-50 pointer-events-none"
@@ -23,7 +23,7 @@ export function Hero() {
         animate={{ opacity: 1 }}
         transition={{ duration: 1.2 }}
       />
-      <div className="section-padding w-full relative z-10">
+      <div className="section-padding-x w-full relative z-10">
         <motion.div
           variants={staggerContainer}
           initial="hidden"
@@ -68,7 +68,7 @@ export function Hero() {
               custom={2}
               className="text-muted-foreground text-sm sm:text-base md:text-lg max-w-xl mx-auto lg:mx-0 leading-relaxed mb-6 sm:mb-8"
             >
-              {profile.tagline}. {summary.slice(0, 160)}…
+              {profile.heroDescription}
             </motion.p>
 
             <motion.div

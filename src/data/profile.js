@@ -3,6 +3,8 @@ export const profile = {
   fullName: "Your Name",
   title: "Java Full Stack Developer",
   tagline: "Building scalable platforms at the intersection of React, Spring Boot & AWS",
+  heroDescription:
+    "Passionate Java Full Stack Developer specializing in Spring Boot, React.js, REST APIs, and AWS cloud solutions. Experienced in building secure, scalable, and cloud-based fintech and enterprise applications with strong backend integrations.",
   location: "Hyderabad, India",
   email: "your.email@example.com",
   phone: "+91 XXXXX XXXXX",
@@ -19,7 +21,7 @@ export const summary = `Dedicated and enthusiastic Java Full Stack Developer wit
 
 export const about = {
   journey: `From electronics engineering foundations to full-stack software development, I've built a path driven by curiosity and execution. My journey spans academic excellence, an Amazon operations internship, and hands-on product engineering on a live investment platform serving multiple stakeholder roles.`,
-  whatIDo: `I design and ship end-to-end features—from React dashboards and REST APIs to database modeling and AWS deployments. I thrive where product thinking meets technical depth: role-based access, BSE integrations, theme systems, and production redeployments.`,
+  whatIDo: `I design and ship end-to-end features—from React dashboards and REST APIs to database modeling and AWS deployments. I thrive where product thinking meets technical depth: role-based access, API integrations, theme systems, and production deployments and redeployments.`,
   goals: `Grow as a senior full-stack engineer leading architecture decisions, mentoring teams, and shipping products that scale reliably in regulated domains like fintech and investment management.`,
   passion: `I enjoy building impactful digital products that combine clean UI, scalable backend systems, and seamless user experiences. I'm particularly interested in FinTech applications, cloud deployment, modern frontend experiences, and solving real-world operational challenges through technology.`,
   interests: [

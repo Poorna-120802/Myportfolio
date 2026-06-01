@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, Command, Sun, Moon } from "lucide-react";
 import { navLinks } from "@/data/navigation";
-import { profile } from "@/data/profile";
+import { BrandLogo } from "@/components/common/BrandLogo";
 import { useScrollSpy } from "@/hooks/useScrollSpy";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/utils/cn";
@@ -46,10 +46,11 @@ export function Navbar({ onOpenCommand, theme, toggleTheme }) {
               e.preventDefault();
               handleNav("#home");
             }}
-            className="font-serif text-xl text-gradient-subtle hover:opacity-80 transition-opacity"
+            className="hover:opacity-90 transition-opacity"
+            aria-label="Chandrika — home"
           >
-            {profile.fullName.split(" ")[0] || "Portfolio"}
-            <span className="text-accent-soft">.</span>
+            <BrandLogo variant="mark" size="md" className="sm:hidden" />
+            <BrandLogo variant="full" size="md" className="hidden sm:block" />
           </a>
 
           <ul className="hidden lg:flex items-center gap-1">

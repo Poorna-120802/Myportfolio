@@ -1,6 +1,7 @@
 import { Github, Linkedin, Mail, Heart } from "lucide-react";
 import { footerLinks } from "@/data/navigation";
 import { profile } from "@/data/profile";
+import { BrandLogo } from "@/components/common/BrandLogo";
 
 const socials = [
   { icon: Github, href: profile.github, label: "GitHub" },
@@ -16,7 +17,8 @@ export function Footer() {
       <div className="section-padding pb-10">
         <div className="grid md:grid-cols-3 gap-10 mb-12">
           <div>
-            <p className="font-serif text-2xl text-gradient-subtle mb-3">{profile.fullName}</p>
+            <BrandLogo variant="full" size="lg" className="mb-4" />
+            <p className="font-serif text-xl text-gradient-subtle mb-1">{profile.fullName}</p>
             <p className="text-sm text-muted leading-relaxed max-w-xs">
               {profile.title} crafting scalable web applications with Java, React & AWS.
             </p>
